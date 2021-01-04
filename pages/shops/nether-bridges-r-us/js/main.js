@@ -1,5 +1,5 @@
-let formula = (safety, efficency, style, distance, peril) => {
-        return ((safety + efficency + style) / 3) * distance * peril;
+let formula = (safety, efficency, style, distance, peril, ranges, prices) => {
+        return ((ranges[safety] + ranges[efficency] + ranges[style]) / 3) * distance * peril;
     },
     inRange = (n, min, max) => {
         return x >= min && x <= max;
@@ -29,5 +29,6 @@ document.forms['options'].onsubmit = event => {
     let perilValue = Array.from(peril).map(el => el.value).length * 0.25;
 
     console.log(safety.value, efficiency.value, style.value, distance.value, perilValue);
+    console.log()
     event.preventDefault();
 }

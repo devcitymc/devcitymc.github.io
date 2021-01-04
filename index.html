@@ -4,11 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <title>Dev City | Home</title>
 </head>
 
 <body>
-    in progress
+    <header id="header" class="jumbotron text-center">
+        <h1>Dev City | Home</h1>
+        <h4><em>Crafting dreams, block by block.</em></h4>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Dev City</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/store-index.html">Shop Index</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <section id="welcome">
+                        <h3>F.A.Q</h3>
+                        <strong><h4>So what is this website?</h4></strong>
+                        <p>This website is the official (pending) index of all the stores in DevCity!</p>
+                        <strong><h4>That sounds cool, how do I add my own shop here?</h4></strong>
+                        <p>It's actually pretty simple! All you have to do is DM <strong>Hextanium#5890</strong> on the DevLaunchers Server.</p>
+                        <p>From there, I will ask you a few questions, and your site will be in the <a href="pages/queue.html">queue</a>!</p>
+                        <strong><h4>Where can I find other shops?</h4></strong>
+                        <p>I'm glad you asked! On the navbar, you can click on the <a href="pages/store-index.html">"Shop Index"</a> link.</p>
+                    </section>
+                </div>
+                <div class="col-md-6">
+                    <section id="other">
+                        <h3>To shorten the wait process, send me a message in the format below:</h3>
+                        <pre>
+                            <code>
+**Shop Name:**
+**Shop Description:**
+**Shop Prices:**
+**Is there anything custom you need? (calculators, etc.)**
+**Shop Page Theme: (default, or custom?)**
+**Shop Page Images: (provide images you would like on the site)**
+**Other Notes: (is there anything you need me to do?)**
+                            </code>
+                        </pre>
+                        <small class="small">(Google Form coming soon!)</small>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
 </body>
 
 </html>
